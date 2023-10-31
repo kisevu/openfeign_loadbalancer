@@ -14,3 +14,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  info:
+    app:
+      name: EMPLOYEE-SERVICE
+      description: ameda-kevin-employee service
+      version: 0.0.1
+    env:
+      enabled: true

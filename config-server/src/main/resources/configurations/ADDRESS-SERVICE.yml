@@ -15,6 +15,9 @@ eureka:
   instance:
     hostname: localhost
 management:
+  info:
+    env:
+      enabled: true
   health:
     circuitbreakers:
       enabled: true
